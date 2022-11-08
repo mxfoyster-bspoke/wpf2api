@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="JokeApi" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Joke will go here</TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="JokeTextBlock" >Joke will go here</TextBlock>
     </Grid>
 </Window>
