@@ -3,10 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:wpf2api.Views.Dashboard"
+        
         mc:Ignorable="d"
-        Title="Dashboard" Height="450" Width="800">
+        Title="Dashboard" Height="250" Width="800">
     <Grid>
-        <Button Click="JokeApiBtn_OnClick" Width="100" Height="50">Get A Joke</Button>
+       <Grid.ColumnDefinitions>
+           <ColumnDefinition></ColumnDefinition>
+           <ColumnDefinition></ColumnDefinition>
+       </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Click="JokeApiBtn_OnClick" Width="100" Height="50">Get A Joke (Text)</Button>
+        <Button Grid.Column="1" Click="JokeApiJsonBtn_OnClick" Width="100" Height="50">Get A Joke (Json)</Button>
     </Grid>
 </Window>

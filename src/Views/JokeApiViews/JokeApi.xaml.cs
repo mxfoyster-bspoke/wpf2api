@@ -1,7 +1,7 @@
 using System.Windows;
 using wpf2api.Services;
 
-namespace wpf2api.Views;
+namespace wpf2api.Views.JokeApiViews;
 
 public partial class JokeApi : Window
 {
